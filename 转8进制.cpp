@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <iomanip>
 using namespace std;
 int main()
@@ -12,6 +12,9 @@ int main()
 	cout << "output in double type:" << setprecision(4) << static_cast<double>(testUnint) << endl;
 	cout << "output in Hex unsigned int type:" << hex << testUnint << endl; //16进制输出
 	cout << "output in Oct unsigned int type:" << oct << testUnint << endl;
-	system("pause");
+	double ss = 3.141;
+	int zs;
+	zs = static_cast<int>(ss);
+	cout << "实数" << ss << "转换为整数" << zs<<endl;
 	return 0;
 }
