@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <cstring>
 using namespace std;
 int indexOf(const char* s1, const char* s2)
@@ -31,13 +31,14 @@ int main()
 	cin.getline(s2, 100);
 
 	int result = indexOf(s1, s2);
-	if (result>0)
+	if (result > 0)
 	{
-		cout << "匹配的下标为" << result << endl;
+		cout << "匹配的下标为" << result+1 << endl;
 	}
 	else
 	{
 		cout << "不匹配";
 	}
-	return -1;
+	system("pause");
+	return 0;
 }
