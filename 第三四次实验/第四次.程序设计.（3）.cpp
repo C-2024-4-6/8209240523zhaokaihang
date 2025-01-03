@@ -26,10 +26,10 @@ int main()
     }
     bubbleSort(arr, size);
     cout << "\n排序后的数组：" << endl;
-    for (int i = 0; i < size; ++i) 
-    {
-        cout << arr[i] << " ";
+    for (int i = 0; i < size; i++) {
+        cout << *(arr + i) << " ";
     }
+    cout << endl;
     delete[] arr;
     return 0;
 }
